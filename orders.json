@@ -1,0 +1,67 @@
+{
+  "orders": [
+    {
+      "client": "John Smith",
+      "numero_pedido": 12345,
+      "itens": [
+        {
+          "sku": "SKU1",
+          "qnt": 10,
+          "barcode": 8675309867530
+        },
+        {
+          "sku": "SKU2",
+          "qnt": 5,
+          "barcode": 1234567890123
+        },
+        {
+          "sku": "SKU3",
+          "qnt": 3,
+          "barcode": 9876543210987
+        }
+      ]
+    },
+    {
+      "client": "Jane Doe",
+      "numero_pedido": 67890,
+      "itens": [
+        {
+          "sku": "SKU4",
+          "qnt": 7,
+          "barcode": 5555555555555
+        },
+        {
+          "sku": "SKU5",
+          "qnt": 8,
+          "barcode": 4444444444444
+        },
+        {
+          "sku": "SKU6",
+          "qnt": 2,
+          "barcode": 2222222222222
+        }
+      ]
+    },
+    {
+      "client": "Bob Johnson",
+      "numero_pedido": 24680,
+      "itens": [
+        {
+          "sku": "SKU7",
+          "qnt": 6,
+          "barcode": 1111111111111
+        },
+        {
+          "sku": "SKU8",
+          "qnt": 4,
+          "barcode": 9999999999999
+        },
+        {
+          "sku": "SKU9",
+          "qnt": 1,
+          "barcode": 8888888888888
+        }
+      ]
+    }
+  ]
+}

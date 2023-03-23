@@ -1,0 +1,33 @@
+body {
+    background-color: #465c67;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.alert {
+    margin-top: 1.5rem;
+}
