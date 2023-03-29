@@ -1,7 +1,29 @@
 {
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
     "csv-parse": "^5.3.6",
     "csv-parser": "^3.0.0",
-    "fs": "^0.0.1-security"
-  }
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "mariadb": "^3.1.1",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.30.0",
+    "sequelize-cli": "^6.6.0"
+  },
+  "name": "controle-de-expedicao",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfacchi/controle-de-expedicao.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfacchi/controle-de-expedicao/issues"
+  },
+  "homepage": "https://github.com/lfacchi/controle-de-expedicao#readme"
 }

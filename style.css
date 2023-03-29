@@ -1,12 +1,20 @@
 body {
-    background-color: #465c67;
+    background-color: #242433;
 }
 
 .container {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(7, 7, 7, 0.99);
     border-radius: 5px;
     padding: 30px;
+    position: relative;
+}
+.container img {
+    position: absolute;
+    top: auto;
+    right: auto;
+    width: 100px;
+    height: 57px;
 }
 
 .form-group {

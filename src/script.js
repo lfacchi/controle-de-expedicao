@@ -26,7 +26,8 @@ class PedidoDeVenda {
 
     showInfo() {
         let title = document.getElementById("header");
-        title.innerHTML = `<h4>Pedido: ${this.numero_pedido}<br></br>Cliente: ${this.cliente}<br></br></h4>`;
+        title.innerHTML = `
+            <h4>Pedido: ${this.numero_pedido}<br></br>Cliente: ${this.cliente}<br></br></h4>`;
         const tbody = document.querySelector("table tbody");
         for (let item of this.itens) {
             let row = document.createElement("tr");
@@ -39,21 +40,6 @@ class PedidoDeVenda {
             tbody.appendChild(row);
         }
     }
-}
-
-function readCsv(file){
-    fetch(file)
-        .then(response => response.text())
-        .then(data => {
-            const rows = data.split('\n');
-            const result = [];
-            for (let i = 0; i < rows.length; i++) {
-                const row = rows[i].split(';');
-                // result.push(row);
-                console.log(row);
-            }
-        })
-        .catch(error => console.error(error));
 }
 
 function checkBarcode() {
@@ -92,10 +78,20 @@ let itens = [item1, item2, item3];
 
 let pedido = new PedidoDeVenda("Stormshop", "112", itens);
 
-let input = document.getElementById("barcode-input");
-
+async function read_json(path, num){
+    fetch(path)
+        .then(response => response.json())
+        .then(data => {
+            const orders = data.orders;
+            orders.forEach(function(order){
+                if (order['numero_pedido'] === num)
+                    console.log(order);
+            })
+        })
+}
 
 window.addEventListener("load", function () {
+   read_json()
     pedido.showInfo();
 });
 
